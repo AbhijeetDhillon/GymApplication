@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gymbackg"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Squats"
+                android:id="@+id/bwlegs1"
+                android:textSize="25dp"
+                android:onClick="bwsquats"
+                android:background="#00ffffff"
+                android:textColor="@color/abc_primary_text_disable_only_material_dark" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bwlegs2"
+                android:text="Lunges"
+                android:textSize="25dp"
+                android:onClick="bwlunges"
+                android:background="#00ffffff"
+                android:textColor="@color/abc_primary_text_disable_only_material_dark" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calf Raises"
+                android:id="@+id/bwlegs3"
+                android:textSize="25dp"
+                android:onClick="bwcalfraises"
+                android:background="#00ffffff"
+                android:textColor="@color/abc_primary_text_disable_only_material_dark" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gymbackg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Meal 1 (Breakfast)"
+                android:id="@+id/textView14"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.19"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:textColor="#fff09b"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.43"
+                android:text="@string/fitnessmeal1"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" 2 - 3 hours gap"
+                android:id="@+id/textView16"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="#08CC78"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_weight="0.06">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Meal 2 "
+                android:id="@+id/textView17"
+                android:layout_gravity="center_horizontal"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:textColor="#fff09b"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView18"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/fitnessmeal2"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" 2 - 3 hours gap"
+            android:id="@+id/textView21"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="#08CC78"
+            android:padding="5dp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Meal 3 (Lunch)"
+                android:id="@+id/textView19"
+                android:layout_gravity="center_horizontal"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:textColor="#fff09b"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/leanmeal3"
+                android:id="@+id/textView20"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" 2 - 3 hours gap"
+                android:id="@+id/textView22"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="#08CC78"
+                android:padding="5dp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Meal 4 (Pre Workout)"
+                android:id="@+id/textView23"
+                android:layout_gravity="center_horizontal"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:textColor="#fff09b"
+                android:padding="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fitnessmeal4"
+                android:id="@+id/textView24"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Meal 5 (Post Workout)"
+                android:id="@+id/textView25"
+                android:layout_gravity="center_horizontal"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#fff09b"
+                android:padding="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/leanmeal5"
+                android:id="@+id/textView26"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 2 - 3 hours gap"
+                android:id="@+id/textView30"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="#08CC78"
+                android:padding="10dp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Meal 6 (Dinner)"
+                android:id="@+id/textView27"
+                android:layout_gravity="center_horizontal"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#fff09b"
+                android:padding="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/leanmeal6"
+                android:id="@+id/textView28"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:padding="6dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

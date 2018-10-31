@@ -1,0 +1,2033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asdhillon.admin.gymapplication" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="GymMentor"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.asd.gymapp.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.Bulk"
+            android:parentActivityName="com.asd.gymapp.MainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.Lean"
+            android:parentActivityName="com.asd.gymapp.MainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.Strength"
+            android:parentActivityName="com.asd.gymapp.MainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.Fitness"
+            android:parentActivityName="com.asd.gymapp.MainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLoss"
+            android:parentActivityName="com.asd.gymapp.MainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeight"
+            android:parentActivityName="com.asd.gymapp.MainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.bulkWorkout"
+            android:parentActivityName="com.asd.gymapp.Bulk"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Bulk" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.leanWorkout"
+            android:parentActivityName="com.asd.gymapp.Lean"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Lean" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.strenghtWorkout"
+            android:parentActivityName="com.asd.gymapp.Strength"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Strength" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.weightlossWorkout"
+            android:parentActivityName="com.asd.gymapp.WeightLoss"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLoss" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.fitnessWorkout"
+            android:parentActivityName="com.asd.gymapp.Fitness"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Fitness" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.bodyweightWorkout"
+            android:parentActivityName="com.asd.gymapp.BodyWeight"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeight" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkMonday"
+            android:parentActivityName="com.asd.gymapp.bulkWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.bulkWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkTuesday"
+            android:parentActivityName="com.asd.gymapp.bulkWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.bulkWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkWednesday"
+            android:parentActivityName="com.asd.gymapp.bulkWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.bulkWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkThursday"
+            android:parentActivityName="com.asd.gymapp.bulkWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.bulkWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkFriday"
+            android:parentActivityName="com.asd.gymapp.bulkWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.bulkWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanMonday"
+            android:parentActivityName="com.asd.gymapp.Lean"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Lean" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanTuesday"
+            android:parentActivityName="com.asd.gymapp.leanWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.leanWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanWednesday"
+            android:parentActivityName="com.asd.gymapp.leanWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.leanWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanThursday"
+            android:parentActivityName="com.asd.gymapp.leanWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.leanWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanFriday"
+            android:parentActivityName="com.asd.gymapp.leanWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.leanWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanSaturday"
+            android:parentActivityName="com.asd.gymapp.leanWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.leanWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessMonday"
+            android:parentActivityName="com.asd.gymapp.fitnessWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.fitnessWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessWednesday"
+            android:parentActivityName="com.asd.gymapp.fitnessWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.fitnessWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessFriday"
+            android:parentActivityName="com.asd.gymapp.fitnessWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.fitnessWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossMonday"
+            android:parentActivityName="com.asd.gymapp.weightlossWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.weightlossWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossTuesday"
+            android:parentActivityName="com.asd.gymapp.weightlossWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.weightlossWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossWednesday"
+            android:parentActivityName="com.asd.gymapp.weightlossWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.weightlossWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossSaturday"
+            android:parentActivityName="com.asd.gymapp.weightlossWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.weightlossWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossFriday"
+            android:parentActivityName="com.asd.gymapp.weightlossWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.weightlossWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrenghtMonday"
+            android:parentActivityName="com.asd.gymapp.strenghtWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.strenghtWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrenghtWednesday"
+            android:parentActivityName="com.asd.gymapp.strenghtWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.strenghtWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrenghtFriday"
+            android:parentActivityName="com.asd.gymapp.strenghtWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.strenghtWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrenghtThursday"
+            android:parentActivityName="com.asd.gymapp.strenghtWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.strenghtWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightMonday"
+            android:parentActivityName="com.asd.gymapp.bodyweightWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.bodyweightWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightTuesday"
+            android:parentActivityName="com.asd.gymapp.bodyweightWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.bodyweightWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightThursday"
+            android:parentActivityName="com.asd.gymapp.bodyweightWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.bodyweightWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightFriday"
+            android:parentActivityName="com.asd.gymapp.bodyweightWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.bodyweightWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightSaturday"
+            android:parentActivityName="com.asd.gymapp.bodyweightWorkout"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.bodyweightWorkout" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkMondayWorkout1"
+            android:parentActivityName="com.asd.gymapp.BulkMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkMondayWorkout2"
+            android:parentActivityName="com.asd.gymapp.BulkMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkMondayWorkout3"
+            android:parentActivityName="com.asd.gymapp.BulkMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkMondayWorkout4"
+            android:parentActivityName="com.asd.gymapp.BulkMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkMondayWorkout5"
+            android:parentActivityName="com.asd.gymapp.BulkMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkMondayWorkout6"
+            android:parentActivityName="com.asd.gymapp.BulkMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkMondayWorkout7"
+            android:parentActivityName="com.asd.gymapp.BulkMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkMondayWorkout8"
+            android:parentActivityName="com.asd.gymapp.BulkMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkMondayWorkout9"
+            android:parentActivityName="com.asd.gymapp.BulkMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkTuesdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.BulkTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkTuesdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.BulkTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkTuesdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.BulkTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkTuesdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.BulkTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkTuesdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.BulkTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkTuesdayWorkout6"
+            android:parentActivityName="com.asd.gymapp.BulkTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkTuesdayWorkout8"
+            android:parentActivityName="com.asd.gymapp.BulkTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkTuesdayWorkout7"
+            android:parentActivityName="com.asd.gymapp.BulkTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkWedenesdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.BulkWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkWednesdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.BulkWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkWednesdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.BulkWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkWednesdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.BulkWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkWednesdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.BulkWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkThursdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.BulkThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkThursdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.BulkThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkThursdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.BulkThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkThursdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.BulkThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkThursdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.BulkThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkFridayWorkout1"
+            android:parentActivityName="com.asd.gymapp.BodyWeightFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkFridayWorkout2"
+            android:parentActivityName="com.asd.gymapp.BulkFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkFridayWorkout3"
+            android:parentActivityName="com.asd.gymapp.BulkFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkFridayWorkout4"
+            android:parentActivityName="com.asd.gymapp.BulkFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkFridayWorkout5"
+            android:parentActivityName="com.asd.gymapp.BulkFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BulkFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanFridayWorkout1"
+            android:parentActivityName="com.asd.gymapp.LeanFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanFridayWorkout2"
+            android:parentActivityName="com.asd.gymapp.LeanFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanFridayWorkout3"
+            android:parentActivityName="com.asd.gymapp.LeanFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanFridayWorkout4"
+            android:parentActivityName="com.asd.gymapp.LeanFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanFridayWorkout5"
+            android:parentActivityName="com.asd.gymapp.LeanFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanFridayWorkout6"
+            android:parentActivityName="com.asd.gymapp.LeanFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanFridayWorkout7"
+            android:parentActivityName="com.asd.gymapp.LeanFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanMondayWorkout1"
+            android:parentActivityName="com.asd.gymapp.LeanMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanMondayWorkout2"
+            android:parentActivityName="com.asd.gymapp.LeanMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanMondayWorkout3"
+            android:parentActivityName="com.asd.gymapp.LeanMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanMondayWorkout4"
+            android:parentActivityName="com.asd.gymapp.LeanMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanMondayWorkout5"
+            android:parentActivityName="com.asd.gymapp.LeanMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanMondayWorkout6"
+            android:parentActivityName="com.asd.gymapp.LeanMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanTuesdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.LeanTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanTuesdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.LeanTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanTuesdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.LeanTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanTuesdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.LeanTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanTuesdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.LeanTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanTuesdayWorkout6"
+            android:parentActivityName="com.asd.gymapp.LeanTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanTuesdayWorkout7"
+            android:parentActivityName="com.asd.gymapp.LeanTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanTuesdayWorkout8"
+            android:parentActivityName="com.asd.gymapp.LeanTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanWednesdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.LeanWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanWednesdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.LeanWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanWednesdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.LeanWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanWednesdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.LeanWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanWednesdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.LeanWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanWednesdayWorkout6"
+            android:parentActivityName="com.asd.gymapp.LeanWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanWednesdayWorkout7"
+            android:parentActivityName="com.asd.gymapp.LeanWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanWednesdayWorkout8"
+            android:parentActivityName="com.asd.gymapp.LeanWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanThursdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.LeanThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanThursdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.LeanThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanThursdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.LeanThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanThursdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.LeanThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanThursdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.LeanThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanSaturdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.LeanSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanSaturdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.LeanSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanSaturdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.LeanSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanSaturdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.LeanSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanSaturdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.LeanSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.LeanSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossMondayWorkout1"
+            android:parentActivityName="com.asd.gymapp.WeightLossMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossMondayWorkout2"
+            android:parentActivityName="com.asd.gymapp.WeightLossMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossMondayWorkout3"
+            android:parentActivityName="com.asd.gymapp.WeightLossMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossMondayWorkout4"
+            android:parentActivityName="com.asd.gymapp.WeightLossMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossMondayWorkout5"
+            android:parentActivityName="com.asd.gymapp.WeightLossMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossMondayWorkout6"
+            android:parentActivityName="com.asd.gymapp.WeightLossMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossMondayWorkout7"
+            android:parentActivityName="com.asd.gymapp.WeightLossMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossMondayWorkout8"
+            android:parentActivityName="com.asd.gymapp.WeightLossMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossMondayWorkout9"
+            android:parentActivityName="com.asd.gymapp.WeightLossMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossMondayWorkout10"
+            android:parentActivityName="com.asd.gymapp.WeightLossMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossMondayWorkout11"
+            android:parentActivityName="com.asd.gymapp.WeightLossMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossWednesdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.WeightLossWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossWednesdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.WeightLossWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossWednesdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.WeightLossWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossWednesdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.WeightLossWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossWednesdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.WeightLossWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossWednesdayWorkout6"
+            android:parentActivityName="com.asd.gymapp.WeightLossWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossWednesdayWorkout7"
+            android:parentActivityName="com.asd.gymapp.WeightLossWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossWednesdayWorkout8"
+            android:parentActivityName="com.asd.gymapp.WeightLossWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossWednesdayWorkout9"
+            android:parentActivityName="com.asd.gymapp.WeightLossWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossWednesdayWorkout10"
+            android:parentActivityName="com.asd.gymapp.WeightLossWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossWednesdayWorkout11"
+            android:parentActivityName="com.asd.gymapp.WeightLossWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossSaturdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.WeightLossSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossSaturdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.WeightLossSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossSaturdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.WeightLossSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossSaturdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.WeightLossSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossSaturdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.WeightLossSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossSaturdayWorkout6"
+            android:parentActivityName="com.asd.gymapp.WeightLossSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossSaturdayWorkout7"
+            android:parentActivityName="com.asd.gymapp.WeightLossSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossSaturdayWorkout8"
+            android:parentActivityName="com.asd.gymapp.WeightLossSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossSaturdayWorkout9"
+            android:parentActivityName="com.asd.gymapp.WeightLossSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossSaturdayWorkout10"
+            android:parentActivityName="com.asd.gymapp.WeightLossSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossSaturdayWorkout11"
+            android:parentActivityName="com.asd.gymapp.WeightLossSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossTuesdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.WeightLossTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossTuesdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.WeightLossTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossTuesdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.WeightLossTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossTuesdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.WeightLossTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossTuesdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.WeightLossTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossFridayWorkout1"
+            android:parentActivityName="com.asd.gymapp.WeightLossFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossFridayWorkout2"
+            android:parentActivityName="com.asd.gymapp.WeightLossFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossFridayWorkout3"
+            android:parentActivityName="com.asd.gymapp.WeightLossFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossFridayWorkout4"
+            android:parentActivityName="com.asd.gymapp.WeightLossFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossFridayWorkout5"
+            android:parentActivityName="com.asd.gymapp.WeightLossFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLossFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthMondayWorkout1"
+            android:parentActivityName="com.asd.gymapp.StrenghtMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthMondayWorkout2"
+            android:parentActivityName="com.asd.gymapp.StrenghtMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthMondayWorkout3"
+            android:parentActivityName="com.asd.gymapp.StrenghtMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthMondayWorkout4"
+            android:parentActivityName="com.asd.gymapp.StrenghtMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthMondayWorkout5"
+            android:parentActivityName="com.asd.gymapp.StrenghtMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthWednesdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.StrenghtWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthWednesdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.StrenghtWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthWednesdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.StrenghtWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthWednesdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.StrenghtWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthWednesdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.StrenghtWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthThursdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.StrenghtThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthThursdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.StrenghtThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthThursdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.StrenghtThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthThursdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.StrenghtThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthThursdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.StrenghtThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthFridayWorkout1"
+            android:parentActivityName="com.asd.gymapp.StrenghtFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthFridayWorkout2"
+            android:parentActivityName="com.asd.gymapp.StrenghtFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthFridayWorkout3"
+            android:parentActivityName="com.asd.gymapp.StrenghtFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthFridayWorkout4"
+            android:parentActivityName="com.asd.gymapp.StrenghtFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrengthFridayWorkout5"
+            android:parentActivityName="com.asd.gymapp.StrenghtFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.StrenghtFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightMondayWorkout1"
+            android:parentActivityName="com.asd.gymapp.BodyWeightMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightMondayWorkout2"
+            android:parentActivityName="com.asd.gymapp.BodyWeightMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightMondayWorkout3"
+            android:parentActivityName="com.asd.gymapp.BodyWeightMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightMondayWorkout4"
+            android:parentActivityName="com.asd.gymapp.BodyWeightMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightMondayWorkout5"
+            android:parentActivityName="com.asd.gymapp.BodyWeightMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightMondayWorkout6"
+            android:parentActivityName="com.asd.gymapp.BodyWeightMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightTuesdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.BodyWeightTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightTuesdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.BodyWeightTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightTuesdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.BodyWeightTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightTuesdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.BodyWeightTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightTuesdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.BodyWeightTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightTuesdayWorkout6"
+            android:parentActivityName="com.asd.gymapp.BodyWeightTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightTuesdayWorkout7"
+            android:parentActivityName="com.asd.gymapp.BodyWeightTuesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightTuesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightThursdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.BodyWeightThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightThursdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.BodyWeightThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightThursdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.BodyWeightThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightThursdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.BodyWeightThursday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightThursday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightFridayWorkout1"
+            android:parentActivityName="com.asd.gymapp.BodyWeightFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightFridayWorkout2"
+            android:parentActivityName="com.asd.gymapp.BodyWeightFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightFridayWorkout3"
+            android:parentActivityName="com.asd.gymapp.BodyWeightFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightSaturdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.BodyWeightSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightSaturdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.BodyWeightSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightSaturdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.BodyWeightSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightSaturdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.BodyWeightSaturday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeightSaturday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessMondayWorkout1"
+            android:parentActivityName="com.asd.gymapp.FitnessMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessMondayWorkout2"
+            android:parentActivityName="com.asd.gymapp.FitnessMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessMondayWorkout3"
+            android:parentActivityName="com.asd.gymapp.FitnessMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessMondayWorkout4"
+            android:parentActivityName="com.asd.gymapp.FitnessMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessMondayWorkout5"
+            android:parentActivityName="com.asd.gymapp.FitnessMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessMondayWorkout6"
+            android:parentActivityName="com.asd.gymapp.FitnessMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessMondayWorkout7"
+            android:parentActivityName="com.asd.gymapp.FitnessMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessMondayWorkout8"
+            android:parentActivityName="com.asd.gymapp.FitnessMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessMondayWorkout9"
+            android:parentActivityName="com.asd.gymapp.FitnessMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessMondayWorkout10"
+            android:parentActivityName="com.asd.gymapp.FitnessMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessMondayWorkout11"
+            android:parentActivityName="com.asd.gymapp.FitnessMonday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessMonday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessFridayWorkout1"
+            android:parentActivityName="com.asd.gymapp.FitnessFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessFridayWorkout2"
+            android:parentActivityName="com.asd.gymapp.FitnessFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessFridayWorkout3"
+            android:parentActivityName="com.asd.gymapp.FitnessFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessFridayWorkout4"
+            android:parentActivityName="com.asd.gymapp.FitnessFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessFridayWorkout5"
+            android:parentActivityName="com.asd.gymapp.FitnessFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessFridayWorkout6"
+            android:parentActivityName="com.asd.gymapp.FitnessFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessFridayWorkout7"
+            android:parentActivityName="com.asd.gymapp.FitnessFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessFridayWorkout8"
+            android:parentActivityName="com.asd.gymapp.FitnessFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessFridayWorkout9"
+            android:parentActivityName="com.asd.gymapp.FitnessFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessFridayWorkout10"
+            android:parentActivityName="com.asd.gymapp.FitnessFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessFridayWorkout11"
+            android:parentActivityName="com.asd.gymapp.FitnessFriday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessFriday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessWednesdayWorkout1"
+            android:parentActivityName="com.asd.gymapp.FitnessWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessWednesdayWorkout2"
+            android:parentActivityName="com.asd.gymapp.FitnessWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessWednesdayWorkout3"
+            android:parentActivityName="com.asd.gymapp.FitnessWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessWednesdayWorkout4"
+            android:parentActivityName="com.asd.gymapp.FitnessWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessWednesdayWorkout5"
+            android:parentActivityName="com.asd.gymapp.FitnessWednesday"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.FitnessWednesday" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkDiet"
+            android:parentActivityName="com.asd.gymapp.Bulk"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Bulk" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.leanmeal"
+            android:parentActivityName="com.asd.gymapp.Lean"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Lean" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.Fitnessmeal"
+            android:parentActivityName="com.asd.gymapp.Fitness"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Fitness" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.Strengthmeal"
+            android:parentActivityName="com.asd.gymapp.Strength"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Strength" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.Weightlossmeal"
+            android:parentActivityName="com.asd.gymapp.WeightLoss"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLoss" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightmeal"
+            android:parentActivityName="com.asd.gymapp.BodyWeight"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeight" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BulkTips"
+            android:parentActivityName="com.asd.gymapp.Bulk"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Bulk" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.LeanTips"
+            android:parentActivityName="com.asd.gymapp.Lean"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Lean" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.StrenghtTips"
+            android:parentActivityName="com.asd.gymapp.Strength"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Strength" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.FitnessTips"
+            android:parentActivityName="com.asd.gymapp.Fitness"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.Fitness" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.BodyWeightTips"
+            android:parentActivityName="com.asd.gymapp.BodyWeight"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.BodyWeight" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.WeightLossTips"
+            android:parentActivityName="com.asd.gymapp.WeightLoss"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asd.gymapp.WeightLoss" />
+        </activity>
+        <activity
+            android:name="com.asd.gymapp.SplashScreen"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".TraningPrograms" />
+        <activity android:name=".Beginner" />
+        <activity android:name=".Intermidiate" />
+        <activity android:name=".Advanced" />
+        <activity android:name=".Personalized" />
+        <activity android:name=".Workout" />
+        <activity android:name=".ChestWorkout" />
+        <activity android:name=".BackWorkout" />
+        <activity android:name=".BicepsWorkout" />
+        <activity android:name=".TricepsWorkout" />
+        <activity android:name=".ShouldersWorkout" />
+        <activity android:name=".LegsWorkout" />
+        <activity
+            android:name=".BeginnerBulkTraining"
+            android:label="@string/title_activity_beginner_training"
+            android:parentActivityName=".Beginner"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asdhillon.admin.gymapplication.Beginner" />
+        </activity>
+        <activity
+            android:name=".IntermidiateBulkTraining"
+            android:label="@string/title_activity_intermidiate_training"
+            android:parentActivityName=".Intermidiate"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asdhillon.admin.gymapplication.Intermidiate" />
+        </activity>
+        <activity
+            android:name=".AdvancedBulkTraining"
+            android:label="@string/title_activity_advanced_training"
+            android:parentActivityName=".Advanced"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asdhillon.admin.gymapplication.Advanced" />
+        </activity>
+        <activity android:name=".BeginnerCustomised" />
+        <activity android:name=".IntermidiateCustomised" />
+        <activity android:name=".AdvancedCustomised" />
+        <activity android:name=".GeneralBodyWeight" />
+        <activity android:name=".BeginnerLeanWorkout" />
+        <activity android:name=".BeginnerLeanTips" />
+        <activity android:name=".BeginnerLeanDiet" />
+        <activity android:name=".IntermidiateLeanWorkout" />
+        <activity android:name=".IntermidiateLeanDiet" />
+        <activity android:name=".AdvancedLeanWorkout" />
+        <activity android:name=".AdvancedLeanDiet" />
+        <activity android:name=".AdvancedLeanTips" />
+        <activity
+            android:name=".BeginnerLeanTraining"
+            android:label="@string/title_activity_beginner_lean_training"
+            android:parentActivityName=".Beginner"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asdhillon.admin.gymapplication.Beginner" />
+        </activity>
+        <activity
+            android:name=".IntermidiateLeanTraining"
+            android:label="@string/title_activity_intermidiate_lean_training"
+            android:parentActivityName=".Intermidiate"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asdhillon.admin.gymapplication.Intermidiate" />
+        </activity>
+        <activity android:name=".IntermidiateLeanTips" />
+        <activity
+            android:name=".AdvancedLeanTraning"
+            android:label="@string/title_activity_advanced_lean_traning"
+            android:parentActivityName=".Advanced"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asdhillon.admin.gymapplication.Advanced" />
+        </activity>
+        <activity android:name=".GeneralTraning" />
+        <activity
+            android:name=".GeneralWeightLossTraning"
+            android:label="@string/title_activity_general_weight_loss_traning"
+            android:parentActivityName=".GeneralTraning"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asdhillon.admin.gymapplication.GeneralTraning" />
+        </activity>
+        <activity
+            android:name=".GeneralFitnessTraining"
+            android:label="@string/title_activity_general_fitness_training"
+            android:parentActivityName=".GeneralTraning"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asdhillon.admin.gymapplication.GeneralTraning" />
+        </activity>
+        <activity android:name=".Nutriotion" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gymbackg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Lat Pulldown"
+                android:id="@+id/button11"
+                android:textSize="25dp"
+                android:onClick="latpulldown"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button12"
+                android:text="Seated Rowing"
+                android:textSize="25dp"
+                android:onClick="seatedrowing"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Flat dumbbell press"
+                android:id="@+id/button13"
+                android:textSize="25dp"
+                android:onClick="flatdumbbellpress"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cable Crossover Fly"
+                android:id="@+id/button14"
+                android:textSize="25dp"
+                android:onClick="cablecrossoverfly"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dumbbell Front Raise"
+                android:id="@+id/button15"
+                android:textSize="25dp"
+                android:onClick="frontraise"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dumbbell Lateral Raise"
+                android:id="@+id/button16"
+                android:textSize="25dp"
+                android:onClick="lateralraise"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dumbbell Overhead Extension"
+                android:id="@+id/button17"
+                android:textSize="25dp"
+                android:onClick="overheadextension"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="Bar Pushdown"
+                android:id="@+id/button18"
+                android:textSize="25dp"
+                android:onClick="barpushdown"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dumbbell Curls"
+                android:id="@+id/button194"
+                android:textSize="25dp"
+                android:onClick="dumbbellcurls"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hammer Curls "
+                android:id="@+id/button195"
+                android:textSize="25dp"
+                android:onClick="hammercurls"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Weighted Squats"
+                android:id="@+id/button1"
+                android:textSize="25dp"
+                android:onClick="weightedsquats"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

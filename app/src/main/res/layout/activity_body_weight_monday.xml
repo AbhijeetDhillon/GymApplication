@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gymbackg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Flat PushUps"
+                android:id="@+id/bwmonday1"
+                android:textSize="25dp"
+                android:onClick="bwflatpushups"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bwmonday2"
+                android:text="Decline Pushups"
+                android:textSize="25dp"
+                android:onClick="bwdeclinepushups"
+                android:textColor="#ffffff"
+                android:background="#00ffffff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Incline Pushups"
+                android:id="@+id/bwmonday4"
+                android:textSize="25dp"
+                android:onClick="bwinclinepushups"
+                android:textColor="#ffffff"
+                android:background="#00ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Diamond Pushups"
+                android:id="@+id/button15"
+                android:textSize="25dp"
+                android:onClick="bwdiamondpushups"
+                android:textColor="#ffffff"
+                android:background="#00ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tricep Dips"
+                android:id="@+id/bwmonday5"
+                android:textSize="25dp"
+                android:onClick="bwtricepdips"
+                android:textColor="#ffffff"
+                android:background="#00ffffff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tricep Extension"
+                android:id="@+id/button17"
+                android:textSize="25dp"
+                android:onClick="bwtricepextension"
+                android:textColor="#ffffff"
+                android:background="#00ffffff" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

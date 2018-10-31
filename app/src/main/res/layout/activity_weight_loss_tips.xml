@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.asd.gymapp.BulkTips"
+    android:background="@drawable/gymbackg">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Workout Tips"
+                android:id="@+id/textView29"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:textColor="#08CC78"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stick to your workout plan. TRAIN HARD "
+                android:id="@+id/textView31"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.07"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TAKE REST. Your body needs it."
+                android:id="@+id/textView32"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.07"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DON&apos;T SKIP your workout routine"
+                android:id="@+id/textView33"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.07"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use MIND-MUSCLE Connection during workouts and be DEDICATED"
+                android:id="@+id/textView34"
+                android:layout_weight="0.22"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Nutrition Tips"
+                android:id="@+id/textView35"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:textColor="#08CC78"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EAT CLEAN.You can consume one cheat meal once in a month"
+                android:id="@+id/textView36"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.00"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DRINK 4 Lits of water everyday  "
+                android:id="@+id/textView37"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.00"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NEVER SKIP pre-workout and post-workout meals"
+                android:id="@+id/textView38"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.00"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weight loss = consume less calories and burn more calories"
+                android:id="@+id/textView39"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.00"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

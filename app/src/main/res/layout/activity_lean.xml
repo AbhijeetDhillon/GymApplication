@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gymbackg">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:id="@+id/BulkWorkout"
+            android:baselineAligned="false"
+            android:clickable="false">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Workout"
+                android:id="@+id/button7"
+                android:layout_gravity="center_horizontal"
+                android:textSize="40dp"
+                android:background="#00c4b6b6"
+                android:onClick="LeanWorkout"
+                android:textColor="#ffffff"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="92dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Nutrition Plan"
+                android:id="@+id/button8"
+                android:layout_gravity="center_horizontal"
+                android:textSize="40dp"
+                android:background="#00c4b6b6"
+                android:onClick="leanmeal"
+                android:textColor="#ffffff"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="92dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tips And Info"
+                android:id="@+id/button9"
+                android:layout_gravity="center_horizontal"
+                android:background="#00c4b6b6"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:onClick="leantips"
+                android:textStyle="italic" />
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+
+
+    </LinearLayout>
+</ScrollView>
